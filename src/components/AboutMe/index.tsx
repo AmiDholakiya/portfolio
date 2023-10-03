@@ -1,6 +1,6 @@
 export default ()=>{
     return (
-        <div>
+        <div id="about" style={{height:"150vh",backgroundColor:"beige"}}>
             About Me
         </div>
     )

@@ -1,0 +1,46 @@
+ #header {
+    transition: all 0.5s;
+    z-index: 997;
+    background-color: var(--color-background) !important;
+  }
+  .header_body{
+    display: flex;
+    justify-content: end;
+    margin: 30px;
+  }
+
+  .header_body ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .header_body > ul {
+    display: flex;
+  }
+  .header_body > ul > li {
+    position: relative;
+    white-space: nowrap;
+    padding: 10px 0 10px 24px;
+  }
+  
+  .header_body > ul > li a {
+    font-size: 15px !important;
+    letter-spacing: 2px;
+    font-weight: 200;
+  
+    position: relative;
+    font-style: normal;
+    font-family: "Share Tech Mono", monospace;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: white;
+  }
+  .active a {
+    color: var(--color-button-hover) !important;
+    font-weight: 700 !important;
+  }
+  .scrolled {
+    background: #04133a !important;
+  }

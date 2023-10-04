@@ -14,12 +14,17 @@ function App() {
   return (
     <BrowserRouter>
       <div>
+        <div className='entry_page'>
             <Header />
+            
+        </div>
+        <div>
             <Home />
             <AboutMe />
             <MySkills />
             <MyWork />
-            <Contact />
+            <Contact /> 
+        </div>
       </div>
       
     </BrowserRouter>

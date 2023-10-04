@@ -1,6 +1,6 @@
 export default ()=>{
     return (
-        <div id="contact" style={{height:"150vh",backgroundColor:"burlywood"}}>
+        <div id="contact" className="body_page" style={{height:"150vh",border:"2px", color:"white"}}>
             Get In Touch
         </div>
     )

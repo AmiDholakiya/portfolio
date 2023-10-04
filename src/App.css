@@ -2,3 +2,7 @@
   z-index: 2;
   /* padding-top: 100px; */
 }
+
+.body_page{
+  background: var(--color-background) !important;
+}

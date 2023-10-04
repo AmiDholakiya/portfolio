@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import "./header.css";
+import Main from "./header";
 
 const Header =  () => {
   const headerRef = useRef<HTMLDivElement>(null);
@@ -13,6 +14,7 @@ const Header =  () => {
 
   return (
     <>
+      <Main />
       <header id="header" className="fixed-top">
         <div className="header_body">
         <ul>
@@ -38,52 +40,9 @@ const Header =  () => {
                 <li id="menu_contact" data-aos="fade-down" data-aos-duration="1500">
                   <a href="#contact">Contact</a>
                 </li>
-
-                {/* <li data-aos="fade-down" data-aos-duration="1800">
-                    <a href="#contact">Contact</a>
-                </li> */}
                 </ul>
         </div>
       </header>
-      {/* <button type="button" className="mobile-nav-toggle d-lg-none">
-        <i className="icofont-navigation-menu"></i>
-      </button> */}
-      {/* <header id="header" className="fixed-top">
-        <div className="container-fluid  navbur">
-          <div className="navi">
-            <div className="col-xl-12 d-flex align-items-center lefty">
-              <nav className="nav-menu  mainMenu">
-                <ul>
-                  <li
-                    className="active"
-                    data-aos="fade-down"
-                    data-aos-duration="300"
-                  >
-                    <a href="#home"> Home</a>
-                  </li>
-                  <li data-aos="fade-down" data-aos-duration="600">
-                    <a href="#about">About</a>
-                  </li>
-                  <li data-aos="fade-down" data-aos-duration="900">
-                    <a href="#services">Skills</a>
-                  </li>
-                  <li data-aos="fade-down" data-aos-duration="1200">
-                    <a href="#skills">My Work</a>
-                  </li>
-
-                  <li data-aos="fade-down" data-aos-duration="1500">
-                    <a href="#work">Contact</a>
-                  </li>
-
-                  {/* <li data-aos="fade-down" data-aos-duration="1800">
-                    <a href="#contact">Contact</a>
-                  </li> 
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </header> */}
     </>
   );
 };

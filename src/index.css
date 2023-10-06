@@ -20,11 +20,17 @@
   --color-background: #200b46;
   --color-title: #2196f3;
   --color-card2: #14143a;
+  /* --color-background-right: #601c8f;
+  --color-background-left: #150550; */
 
-  --color-button: linear-gradient(to left, #17c0e9, #c96ddd, #f45162);
+  --color-background-right: #081E2F;
+  --color-background-left: #030F17;
+
+  --color-button-gradient: linear-gradient(to left, #17c0e9, #c96ddd, #f45162);
   --color-special-color: #eff30e;
   /* --color-button-hover: #808000; */
   --color-button-hover: #01c2c3;
+  --color-button: #318D85;
 
   --color-background-2: #0d012c;
   --color-icon-background: #464a68;
@@ -62,7 +68,8 @@ body {
   scroll-behavior: smooth;
   width: 100vw;
   height: 100vh;
-  font-family: poppins, sans-serif !important;
+  /* font-family: poppins, sans-serif !important; */
+  font-family: "Share Tech Mono", monospace;
   user-select: none;
   font-size: 0.88rem;
   overflow-x: hidden !important;
@@ -94,7 +101,7 @@ h1 {
 }
 h2 {
   font-size: 1.4rem;
-  color: #59c378 !important;
+  color: var(--color-button-hover) !important;
 }
 
 h3 {
@@ -115,6 +122,25 @@ small {
 section > div {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.section_heder h2{
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 1.2rem !important;
+
+}
+
+.section_title{
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section_body{
+  margin: 15px 0px;
+  width: 100%;
 }
 @media only screen and (max-width: 450px) {
   h3 {

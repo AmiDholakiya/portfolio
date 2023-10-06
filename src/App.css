@@ -4,5 +4,9 @@
 }
 
 .body_page{
-  background: var(--color-background) !important;
+  /* background: var(--color-background) !important; */
+  background: linear-gradient(.25turn, var(--color-background-left), 60%, var(--color-background-right)) !important;
+  height: max-content;
+  color: white !important;
+  align-items: center;
 }

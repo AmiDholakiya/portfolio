@@ -28,7 +28,7 @@
     font-size: 15px !important;
     letter-spacing: 2px;
     font-weight: 200;
-  
+    
     position: relative;
     font-style: normal;
     font-family: "Share Tech Mono", monospace;
@@ -52,6 +52,5 @@
     }
   } 
   .scrolled {
-    background: var(--color-background) !important;
-    /* animation: scrollBg 35s linear forwards; */
+    background: linear-gradient(.25turn, var(--color-background-left), 60%, var(--color-background-right)) !important;
   }

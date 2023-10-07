@@ -4,6 +4,7 @@ import AboutMe from "./AboutMe";
 import MySkills from "./MySkills";
 import MyWork from "./MyWork";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 export {
     Header,
@@ -11,5 +12,6 @@ export {
     AboutMe,
     MySkills,
     MyWork,
-    Contact
+    Contact,
+    Footer
 }

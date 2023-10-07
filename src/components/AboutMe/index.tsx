@@ -1,7 +1,7 @@
 import "./aboutme.css"
 import AboutImage from "../../assets/aboutMe.svg"
 
-export default ()=>{
+const AboutMe = ()=>{
     return (
         <div id="about" className="body_page">
             <div className="about_image">
@@ -33,3 +33,5 @@ export default ()=>{
         </div>
     )
 }
+
+export default AboutMe;

@@ -1,7 +1,13 @@
 import "./aboutme.css"
 import AboutImage from "../../assets/aboutMe.svg"
+import { useSelector } from "react-redux";
+import { RootState } from "../../redux/store";
 
 const AboutMe = ()=>{
+    const userData = useSelector(
+        (state: RootState) => state.portfolio.data
+    );
+
     return (
         <div id="about" className="body_page">
             <div className="about_image">
@@ -15,12 +21,12 @@ const AboutMe = ()=>{
                     Why hire me for your next project?
                 </div>
                 <div className="section_body">
-                    I am passionate about using Javascript and Animation Libraries to create awesome user experiences. With over five years of experience developing web applications using the latest front-end and back-end technologies.
+                    {userData.description}
                 </div>
                 <div>
                     <a
-                      href="https://drive.google.com/file/d/127RCSy1lUZE2sS8IgkxxPcUqbw1rYMOR/view"
-                      download="RESUME.pdf"
+                      href={userData.resume_link}
+                      download={`${userData.first_name + userData.last_name}_resume.pdf`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

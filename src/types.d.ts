@@ -4,8 +4,8 @@ export type ProjectState = {
     technologies: string | undefined;
   };
 
-  export type User = {
-    id:string | any;
+  export type UserType = {
+    _id:string | any;
     first_name: string;
     last_name: string;
     email: string;
@@ -17,15 +17,21 @@ export type ProjectState = {
     location: string;
   }
 
-  export type SocialMedia = {
-    id:string;
+  export type SocialMediaType = {
+    _id:string;
     name: string;
     profile_link: string;
 
   }
 
-  export type Project = {
-    id: string;
+  export type SkillType = {
+    _id:string;
+    name: string;
+    logo_file: string;
+  }
+
+  export type ProjectType = {
+    _id: string;
     title: string;
     description: string;
     tag: string;

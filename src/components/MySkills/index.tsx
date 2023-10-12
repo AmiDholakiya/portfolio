@@ -2,9 +2,25 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "./myskills.css"
 import SkillContainer from "./SkillContainer";
+import { useSelector } from "react-redux";
+import { RootState } from "../../redux/store";
+import { useEffect, useState } from "react";
 
 const MySkill =  ()=>{
-    const items = [0,1,2,3,4,5,6,7,8,9].map((i:any)=>< SkillContainer data={{name:"JavaScript "+i,"id":i}}/>)
+    const skillData = useSelector(
+      (state: RootState) => state.portfolio.skillList
+    );
+    const [items, setItems] = useState([]);
+
+    useEffect(()=>{
+      const skillList:any = [];
+      if(skillData.length > 0){
+        skillData.map((data)=>{
+          skillList.push(<SkillContainer id={data._id} data={data} />)
+        })
+        setItems(skillList)
+      }
+    },[skillData])
     const responsive = {
       0: {
         items: 1,

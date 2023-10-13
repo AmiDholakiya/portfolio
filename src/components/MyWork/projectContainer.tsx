@@ -1,27 +1,27 @@
-import ProjectImg from "../../assets/project.jpg"
+import { ProjectType } from "../../types";
 
-const ProjectContainer = (details: any) => {
-  details = details.details
+const ProjectContainer = (props: { details: ProjectType }) => {
+  const details = props.details as ProjectType
   return (
     <div className="project" data-aos="fade-up">
       <div className="project-img">
         <img
-          src={`${ProjectImg}${details.about_avatar}`}
+          src={`${details.cover_file}`}
           alt=""
           className="work-img"
         />
       </div>
       <div className="date-posted">
         <div className="who-post">
-          <p className="admin">{details.language_used.join(" | ")}</p>
+          <p className="admin">{details.technologies.join(" | ")}</p>
         </div>
       </div>
       <div className="work-details">
-        <h2>{details.Project_title}</h2>
-        <p className="work-info">{details.Project_info}</p>
+        <h2>{details.title}</h2>
+        <p className="work-info">{details.description}</p>
         <div className="project-links">
           <a
-            href={details.demo_link}
+            href={details.project_link}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -31,7 +31,7 @@ const ProjectContainer = (details: any) => {
             </h6>
           </a>
           <a
-            href={details.project_link}
+            href={details.source_code_link}
             target="_blank"
             rel="noopener noreferrer"
           >

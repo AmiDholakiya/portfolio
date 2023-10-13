@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { RootState } from "./store";
 import type { PayloadAction } from "@reduxjs/toolkit";
-import { ProjectState, SocialMediaType, ProjectType, UserType, SkillType } from "../types";
+import { SocialMediaType, ProjectType, UserType, SkillType } from "../types";
 import axios, { AxiosError } from "axios";
 import API from "../api";
 
@@ -18,7 +18,7 @@ type initialStateType = {
 const initialState: initialStateType = {
   projectList: [],
   error: "",
-  isLoading: false,
+  isLoading: true,
   socialMediaList: [],
   skillList: [],
   data: {
@@ -30,6 +30,7 @@ const initialState: initialStateType = {
     headline: "",
     description: "",
     profile_file: "",
+    background_file: "",
     resume_link: "",
     location: ""
   }

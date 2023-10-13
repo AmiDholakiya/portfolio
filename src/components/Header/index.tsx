@@ -1,9 +1,17 @@
 import { useEffect, useRef } from "react";
 import "./header.css";
 import Main from "./header";
+import { useSelector } from "react-redux";
+import { RootState } from "../../redux/store";
 
 const Header =  () => {
   const headerRef = useRef<HTMLDivElement>(null);
+  const isLoading = useSelector(
+    (state: RootState) => state.portfolio.isLoading
+  );
+  const error = useSelector(
+    (state: RootState) => state.portfolio.error
+  );
 
   useEffect(() => {
     if (headerRef.current) {
@@ -15,7 +23,7 @@ const Header =  () => {
   return (
     <>
       <Main />
-      <header id="header" className="fixed-top">
+      <header id="header" className={`fixed-top ${ isLoading || error ? "scrolled" : ""}`}>
         <div className="header_body">
         <ul>
                 <li

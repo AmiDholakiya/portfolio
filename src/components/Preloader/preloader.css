@@ -1,0 +1,8 @@
+#preloader{
+    height: calc(100vh - 100px);
+    width: 100vw;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: 0px !important;
+}

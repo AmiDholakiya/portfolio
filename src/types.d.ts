@@ -15,6 +15,7 @@ export type ProjectState = {
     profile_file: string; 
     resume_link: string;
     location: string;
+    background_file: string;
   }
 
   export type SocialMediaType = {

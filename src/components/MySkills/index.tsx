@@ -13,11 +13,9 @@ const MySkill =  ()=>{
     const [items, setItems] = useState([]);
 
     useEffect(()=>{
-      const skillList:any = [];
+      
       if(skillData.length > 0){
-        skillData.map((data)=>{
-          skillList.push(<SkillContainer id={data._id} data={data} />)
-        })
+        const skillList:any = skillData.map((data)=><SkillContainer id={data._id} data={data} />)
         setItems(skillList)
       }
     },[skillData])

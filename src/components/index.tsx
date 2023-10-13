@@ -5,6 +5,8 @@ import MySkills from "./MySkills";
 import MyWork from "./MyWork";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Preloader from "./Preloader";
+import ErrorPage from "./ErrorPage";
 
 export {
     Header,
@@ -13,5 +15,7 @@ export {
     MySkills,
     MyWork,
     Contact,
-    Footer
+    Footer,
+    Preloader,
+    ErrorPage
 }

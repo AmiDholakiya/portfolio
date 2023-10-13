@@ -17,7 +17,7 @@ const ProjectContainer = (props: { details: ProjectType }) => {
         </div>
       </div>
       <div className="work-details">
-        <h2>{details.title}</h2>
+        <h2>{details.title} ({details.project_type})</h2>
         <p className="work-info">{details.description}</p>
         <div className="project-links">
           <a

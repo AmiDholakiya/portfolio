@@ -1,25 +1,58 @@
-import React from 'react';
-import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
+import { Header, Home, AboutMe, MySkills, MyWork, Contact, Preloader, ErrorPage } from './components';
+import { RootState, useAppDispatch } from './redux/store';
+import { BrowserRouter } from 'react-router-dom';
+import { fetchPortfolio } from './redux/portfolioSlice';
+import AOS from "aos";
+import { useSelector } from 'react-redux';
 
 function App() {
+  const dispatch = useAppDispatch()
+  const isLoading = useSelector(
+    (state: RootState) => state.portfolio.isLoading
+  );
+  const error = useSelector(
+    (state: RootState) => state.portfolio.error
+  );
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+      once: true,
+    });
+  }, []);
+
+  useEffect(() => {
+    dispatch(fetchPortfolio());
+  }, [dispatch])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      {
+         (!isLoading && error) ? <ErrorPage /> : <>
+          <div>
+            <div className='entry_page'>
+              <Header />
+            </div>
+            <div>
+                { (isLoading) ?  
+        <Preloader /> : <>
+                  <Home />
+                  <AboutMe />
+                  <MySkills />
+                  <MyWork />
+                  <Contact />
+        </>}
+                  
+            </div>
+          </div>
+        </>
+      }
+
+
+    </BrowserRouter>
+
   );
 }
 

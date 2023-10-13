@@ -1,0 +1,29 @@
+#about{
+    display: flex;
+}
+
+.about_image{
+    flex: 1;
+    padding-left: 2rem;
+}
+
+.about_image img{
+    height: 60%;
+    width: 60%;
+}
+
+.about_info{
+    flex: 1;
+    padding: 2rem;
+}
+
+.download-cv{
+    background-color: var(--color-button-hover);
+    border: none;
+    padding: 15px;
+    transition-duration: 0.5s;
+}
+
+.download-cv:hover{
+    background-color: var(--color-button) !important;
+}

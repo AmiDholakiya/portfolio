@@ -18,6 +18,7 @@ const MyWork = () => {
     responsiveClass: true,
     nav: true,
     dots: true,
+    loop:true,
     autoplay: true,
     navText: [],
     smartSpeed: 1000,
@@ -29,10 +30,10 @@ const MyWork = () => {
         items: 1,
       },
       500: {
-        items: 1,
+        items: 2,
       },
       600: {
-        items: 1,
+        items: 2,
       },
       740: {
         items: 2,

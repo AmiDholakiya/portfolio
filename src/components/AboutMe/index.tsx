@@ -3,6 +3,14 @@ import AboutImage from "../../assets/aboutMe.svg"
 import { useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
 
+const NewLineParagrapgh = (text: {text:string}) => {
+    const lines = text.text.split("\\n")
+    return ( <>
+        {lines.map((newLine,i)=><><div className="tab" key={i}>{newLine} </div><br/></>)}
+    </>
+    )
+}
+
 const AboutMe = ()=>{
     const userData = useSelector(
         (state: RootState) => state.portfolio.data
@@ -21,7 +29,7 @@ const AboutMe = ()=>{
                     Why hire me for your next project?
                 </div>
                 <div className="section_body">
-                    {userData.description}
+                    <NewLineParagrapgh text={userData.description} />
                 </div>
                 <div>
                     <a

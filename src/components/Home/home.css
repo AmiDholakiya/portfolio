@@ -76,11 +76,6 @@
 }
 
 @media (max-width: 1019px) {
-    .home_photo img {
-      border-radius: 50%;
-      height: 70%;
-      width: 65%;
-    }
     .home_body{
         flex-direction: column;
     }

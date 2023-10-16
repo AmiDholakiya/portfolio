@@ -20,7 +20,8 @@ const Home = () => {
             </video>
             <div className="home_body">
                 <div className="home_info">
-                    <p className="job_title"><span>
+                    <p className="job_title" data-aos="fade-up-right"
+                      data-aos-duration="1500"><span>
                         <Typewriter
                             options={{
                                 strings: userData.title,
@@ -30,12 +31,18 @@ const Home = () => {
                             }}
                         />
                     </span></p>
-                    <p className="hey_text"><span>Hey! I Am</span></p>
-                    <p className="name"><span>{userData.first_name} {userData.last_name}</span></p>
-                    <p className="headline"><span>{userData.headline}</span></p>
+                    <p className="hey_text" data-aos="fade-up-right"
+                      data-aos-duration="2000"><span>Hey! I Am</span></p>
+                    <p className="name" data-aos="fade-up-right"
+                      data-aos-duration="2500"><span>{userData.first_name} {userData.last_name}</span></p>
+                    <p className="headline" data-aos="fade-up-right"
+                      data-aos-duration="3000"><span>{userData.headline}</span></p>
                 </div>
-                <div className="home_photo">
-                    <img src={userData.profile_file} alt="Profile Pic"/>
+                <div className="right_div">
+                    <div className="home_photo" data-aos="fade-up-left"
+                        data-aos-duration="3000">
+                        <img src={userData.profile_file} alt="Profile Pic"/>
+                    </div>
                 </div>
             </div>
         </div>

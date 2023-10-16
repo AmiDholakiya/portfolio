@@ -25,24 +25,28 @@ const Contact = () => {
       <div className="section_body">
         <div className="contact-info ">
           <a href={socialMediaList.find((data) => (data.name).toLowerCase() == "github")?.profile_link} target="_blank">
-            <div className="contact-details">
+            <div className="contact-details" data-aos="fade-right"
+                      data-aos-duration="3000" data-aos-easing="ease-in-cubic">
               <i className="bi bi-github" ></i>
             </div>
           </a>
           {/* <a href="https://www.w3schools.com/cssref/pr_border-top.php" target="_blank"> */}
-          <div className="contact-details">
+          <div className="contact-details" data-aos="fade-right"
+                      data-aos-duration="2500" data-aos-easing="ease-in-cubic"> 
             <i className="bi bi-envelope" ></i>
             <p className="d_name">{userData.email}</p>
           </div>
           {/* </a> */}
           {/* <a href="https://www.w3schools.com/cssref/pr_border-top.php" target="_blank"> */}
-          <div className="contact-details">
+          <div className="contact-details" data-aos="fade-right"
+                      data-aos-duration="2000" data-aos-easing="ease-in-cubic"> 
             <i className="bi bi-geo-alt-fill" ></i>
             <p className="d_name">{userData.location}</p>
           </div>
           {/* </a> */}
           <a href={socialMediaList.find((data) => (data.name).toLowerCase() == "github")?.profile_link} target="_blank">
-            <div className="contact-details">
+            <div className="contact-details" data-aos="fade-right"
+                      data-aos-duration="1500" data-aos-easing="ease-in-cubic"> 
               <i className="bi bi-linkedin" ></i>
             </div>
           </a>

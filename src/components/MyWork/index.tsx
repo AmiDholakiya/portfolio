@@ -18,7 +18,7 @@ const MyWork = () => {
     responsiveClass: true,
     nav: true,
     dots: true,
-    loop:true,
+    loop: true,
     autoplay: true,
     navText: [],
     smartSpeed: 1000,
@@ -44,17 +44,27 @@ const MyWork = () => {
       1300: {
         items: 3.5,
       },
-      1440: {
+      1540: {
         items: 4,
       },
+      2000: {
+        items: 4.5
+      },
+      3000: {
+        items: 6
+      }
     },
   };
   return (
-    <div id="mywork" className="body_page">
+    <div id="mywork">
+      <div className="section_heder">
+        <h2>Check Out My Reacet Projects</h2>
+      </div>
       <div className="section_title">
         My Works
       </div>
-      <div>
+
+      <div className="mywork_body">
         <OwlCarousel {...options}>
           {projectsList?.map((details: ProjectType) => (
             <ProjectContainer details={details} />

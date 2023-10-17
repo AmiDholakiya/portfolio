@@ -38,11 +38,8 @@ const Header =  () => {
                 <li id="menu_about" data-aos="fade-down" data-aos-duration="600">
                   <a href="#about">About</a>
                 </li>
-                <li id="menu_skills" data-aos="fade-down" data-aos-duration="900">
-                  <a href="#skills">Skills</a>
-                </li>
-                <li id="menu_mywork" data-aos="fade-down" data-aos-duration="1200">
-                  <a href="#mywork">My Work</a>
+                <li id="menu_professionalProfile" data-aos="fade-down" data-aos-duration="900">
+                  <a href="#professionalProfile">ProfessionalProfile</a>
                 </li>
 
                 <li id="menu_contact" data-aos="fade-down" data-aos-duration="1500">

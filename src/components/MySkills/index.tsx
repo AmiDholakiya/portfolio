@@ -46,7 +46,7 @@ const MySkill =  ()=>{
       }
     };
     return (
-        <div id="skills" className="body_page">
+        <div id="skills">
              <div className="section_heder">
                  <h2>My Skills Progress so far</h2>
              </div>
@@ -65,8 +65,6 @@ const MySkill =  ()=>{
                       responsive={responsive}
                     /> 
              </div>
-                
-                
         </div>
     )
 }

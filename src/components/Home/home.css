@@ -3,6 +3,8 @@
     height: max-content;
     color: white;
     align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .home_background{
@@ -24,6 +26,7 @@
     justify-content: space-evenly;
     height: 100%;
     width: 100%;
+    flex: 1;
 }
 
 .home_info{
@@ -43,8 +46,8 @@
 	display: inline-block;	
     border: 4px solid rgba(200,200,200,0.4);
 	border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 50vh;
+    height: 25vw;
 }
 
 .home_photo img{
@@ -55,24 +58,24 @@
 
 .job_title{
     color: var(--color-button-hover) !important;
-    font-size: 1.5 rem;
+    font-size: 2.5vh;
 }
 
 .hey_text{
     font-weight: 500 !important;
-    font-size: 2rem !important;
+    font-size: 5vh !important;
     color: white;
 }
 
 .name{
     font-weight: 700 !important;
-    font-size: 2.5rem !important;
+    font-size: 5vh !important;
     color: white;
 }
 
 .headline{
     font-weight: 400 !important;
-    font-size: 1.5rem;
+    font-size: 2.5vh;
 }
 
 @media (max-width: 1019px) {

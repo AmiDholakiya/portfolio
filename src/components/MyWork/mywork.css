@@ -1,7 +1,10 @@
 
-#mywork .section_title{
-  padding-bottom: 5px;
+#mywork .section_title, #mywork .section_heder{
   text-align: center;
+}
+
+#mywork,.mywork_body{
+  padding-top: 20px;
 }
 
 .project {

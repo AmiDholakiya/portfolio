@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import './App.css';
-import { Header, Home, AboutMe, MySkills, MyWork, Contact, Preloader, ErrorPage } from './components';
+import { Header, Home, AboutMe, MySkills, MyWork, Contact, Preloader, ErrorPage, ProfessionalProfile } from './components';
 import { RootState, useAppDispatch } from './redux/store';
 import { BrowserRouter } from 'react-router-dom';
 import { fetchPortfolio } from './redux/portfolioSlice';
@@ -40,8 +40,7 @@ function App() {
         <Preloader /> : <>
                   <Home />
                   <AboutMe />
-                  <MySkills />
-                  <MyWork />
+                  <ProfessionalProfile />
                   <Contact />
         </>}
                   

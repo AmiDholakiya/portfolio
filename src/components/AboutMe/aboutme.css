@@ -1,6 +1,7 @@
 #about{
     display: flex;
-
+    min-height: calc(100vh - 100px);
+    height: max-content;
 }
 
 .about_image{

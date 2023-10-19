@@ -1,5 +1,5 @@
 import "./aboutme.css"
-import AboutImage from "../../assets/aboutMe.svg"
+import AboutImage from "assets/aboutMe.svg"
 import { useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
 

@@ -44,7 +44,7 @@ const Contact = () => {
             <p className="d_name">{userData.location}</p>
           </div>
           {/* </a> */}
-          <a href={socialMediaList.find((data) => (data.name).toLowerCase() == "github")?.profile_link} target="_blank">
+          <a href={socialMediaList.find((data) => (data.name).toLowerCase() == "linkedin")?.profile_link} target="_blank">
             <div className="contact-details" data-aos="fade-right"
                       data-aos-duration="1500" data-aos-easing="ease-in-cubic"> 
               <i className="bi bi-linkedin" ></i>

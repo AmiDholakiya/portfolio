@@ -74,6 +74,7 @@
         flex-direction: column;
         padding: 0;
         align-items: start;
+        margin: 0;
     }
     .contact-details{
         flex-direction: row;

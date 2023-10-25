@@ -114,7 +114,7 @@
   
 @media only screen and (max-width: 768px) {
     .project {
-      width: 200px;
+      margin: 1.5rem;
     }
     .section_title {
       text-align: center;
@@ -155,15 +155,5 @@
     }
     .work-details {
       padding: 0 10px 10px 10px;
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    .project {
-      padding: 10px;
-      min-width: 280px !important;
-    }
-    .mywork {
-      padding-left: 20px !important;
     }
 }

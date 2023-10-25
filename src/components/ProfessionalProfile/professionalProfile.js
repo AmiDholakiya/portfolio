@@ -5,7 +5,7 @@ const Main = () => {
         var $bodyHeight = $("#profile_body").height();
         var $screenHeight = $(window).height();
         if($screenHeight > $bodyHeight){
-            document.getElementById("profile_body").style.paddingTop = ($screenHeight - $bodyHeight)/3 + "px";
+            document.getElementById("profile_body").style.paddingTop = ($screenHeight - $bodyHeight)/4 + "px";
         }
     });
 

@@ -31,7 +31,7 @@ const AboutMe = ()=>{
                 <div className="section_body">
                     <NewLineParagrapgh text={userData.description} />
                 </div>
-                <div>
+                <div className="CV-button">
                     <a
                       href={userData.resume_link}
                       download={`${userData.first_name + userData.last_name}_resume.pdf`}

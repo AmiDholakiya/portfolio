@@ -3,13 +3,16 @@ import "./home.css"
 import { useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
 import Typewriter from "typewriter-effect";
+import Main from "./home"
 
 const Home = () => {
     const userData = useSelector(
         (state: RootState) => state.portfolio.data
     );
     return (
-        <div id="home">
+        <>
+        <Main />
+            <div id="home">
             <video autoPlay loop muted className="home_background">
                 <source src={userData.background_file} type="video/mp4" />
                 {/* 
@@ -39,13 +42,14 @@ const Home = () => {
                       data-aos-duration="3000"><span>{userData.headline}</span></p>
                 </div>
                 <div className="right_div">
-                    <div className="home_photo" data-aos="fade-up-left"
+                    <div id="home_photo" data-aos="fade-up-left"
                         data-aos-duration="3000">
                         <img src={userData.profile_file} alt="Profile Pic"/>
                     </div>
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

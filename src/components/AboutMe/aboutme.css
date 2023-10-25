@@ -1,35 +1,50 @@
-#about{
+#about {
     display: flex;
     min-height: calc(100vh - 100px);
     height: max-content;
 }
 
-.about_image{
+.about_image {
     flex: 1;
     padding-left: 2rem;
 }
 
-.about_image img{
+.about_image img {
     height: 60%;
     width: 60%;
 }
 
-.about_info{
+.about_info {
     flex: 1;
     padding: 15px 2rem;
 }
 
-.download-cv{
+.download-cv {
     background-color: var(--color-button-hover);
     border: none;
     padding: 15px;
     transition-duration: 0.5s;
 }
 
-.download-cv:hover{
+.download-cv:hover {
     background-color: var(--color-button) !important;
 }
 
-.tab{
-    text-indent: 20px;
+.tab {
+    text-indent: 50px;
+    word-break: break-all;
+}
+
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+    }
+
+    .section_heder {
+        text-align: center;
+    }
+
+    .CV-button {
+        text-align: center;
+    }
 }

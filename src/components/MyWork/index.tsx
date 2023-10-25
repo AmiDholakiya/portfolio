@@ -30,29 +30,23 @@ const MyWork = () => {
         items: 1,
       },
       500: {
-        items: 2,
+        items: 1,
       },
       600: {
-        items: 2,
+        items: 1,
       },
       740: {
         items: 2,
       },
       1000: {
-        items: 3,
+        items: 2.7,
       },
       1300: {
-        items: 3.5,
+        items: 3,
       },
-      1540: {
-        items: 4,
+      1440: {
+        items: 3,
       },
-      2000: {
-        items: 4.5
-      },
-      3000: {
-        items: 6
-      }
     },
   };
   return (

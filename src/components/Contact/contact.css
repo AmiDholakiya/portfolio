@@ -68,3 +68,21 @@
     padding-bottom: 0;
     font-size: 1.3rem;
   }
+
+  @media (max-width: 660px) {
+    .contact-info{
+        flex-direction: column;
+        padding: 0;
+        align-items: start;
+    }
+    .contact-details{
+        flex-direction: row;
+    }
+    .contact-details p{
+        margin-left: 30px;
+    }
+    .contact-details i{
+        width: 85px;
+        height: 85px;
+    }
+  }

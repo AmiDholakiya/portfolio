@@ -45,7 +45,7 @@ const Header = () => {
               <a onClick={() => { closeSideMenu() }} href="#about">About</a>
             </li>
             <li id="menu_professionalProfile" data-aos="fade-down" data-aos-duration="900">
-              <a onClick={() => { closeSideMenu() }} href="#professionalProfile">ProfessionalProfile</a>
+              <a onClick={() => { closeSideMenu() }} href="#professionalProfile">Portfolio</a>
             </li>
 
             <li id="menu_contact" data-aos="fade-down" data-aos-duration="1500">

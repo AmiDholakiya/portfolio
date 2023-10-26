@@ -6,7 +6,7 @@ import { RootState } from "../../redux/store";
 const NewLineParagrapgh = (text: {text:string}) => {
     const lines = text.text.split("\\n")
     return ( <>
-        {lines.map((newLine,i)=><><div className="tab" key={i}>{newLine} </div><br/></>)}
+        {lines.map((newLine,i)=><><p className="tab" key={i}>{newLine} </p><br/></>)}
     </>
     )
 }

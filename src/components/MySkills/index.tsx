@@ -48,7 +48,7 @@ const MySkill =  ()=>{
     return (
         <div id="skills">
              <div className="section_heder">
-                 <h2>My Skills Progress so far</h2>
+                 <h2>My Skill Progress so far</h2>
              </div>
              <div className="section_title">
                  My Skills

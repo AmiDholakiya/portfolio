@@ -52,10 +52,10 @@ const MyWork = () => {
   return (
     <div id="mywork">
       <div className="section_heder">
-        <h2>Check Out My Reacet Projects</h2>
+        <h2>Check Out My Recent Projects</h2>
       </div>
       <div className="section_title">
-        My Works
+        My Work
       </div>
 
       <div className="mywork_body">
